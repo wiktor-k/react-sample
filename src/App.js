@@ -15,7 +15,7 @@ class Square extends React.Component {
 
 class Board extends React.Component{
   renderSquare(i) {
-    return <Square />;
+    return <Square value={i} />;
   }
 
   render(){
@@ -43,12 +43,18 @@ class Board extends React.Component{
   }
 }
 
-function App() {
-  return (
-    <div className="App">
-     return <Board  />;
-    </div>
-  );
+export class App extends React.Component {
+  render() {
+    return (
+      <div className="game">
+        <div className="game-board">
+          <Board />
+        </div>
+        <div className="game-info">
+          <div>{/* status */}</div>
+          <ol>{/* TODO */}</ol>
+        </div>
+      </div>
+    );
 }
-
-export default App;
+}
