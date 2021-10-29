@@ -17,6 +17,12 @@ class Square extends React.Component {
         {this.state.value}
 
       </button>
+
+      <button className="square"
+        
+        onClick={() => console.log("First game")}
+
+      </button>
     );
   }
 }
