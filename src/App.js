@@ -60,7 +60,10 @@ export class App extends React.Component {
         </div>
         <div className="game-info">
           <div>{/* status */}</div>
-          <ol>{/* TODO */}</ol>
+          <ol>
+            <li>Collect all squares</li>
+            <li>Be careful</li>
+          </ol>
         </div>
       </div>
     );
