@@ -29,6 +29,10 @@ class Board extends React.Component{
     return <Square value={i} />;
   }
 
+  renderInfo(value) {
+    return "Please accept this rules: " + value;
+  }
+  
   render(){
     const status = 'Next player: X';
     return (
@@ -49,6 +53,8 @@ class Board extends React.Component{
           {this.renderSquare(7)}
           {this.renderSquare(8)}
         </div>
+
+        <div>{renderInfo("Have fun!")}</div>
       </div>
     )
   }
